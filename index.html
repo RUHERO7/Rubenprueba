@@ -30,12 +30,13 @@ a {
 main {
     background: #A8A4FF;
     padding: 30px;
-	overflow: auto;
-	zoom: 1;
+	
 }
 aside {
     background: #CF9CFA;
     padding: 30px;
+	vertical-align: top;
+	
 }
 article {
     background: #C0A3D1;
@@ -47,19 +48,21 @@ footer {
     padding: 30px;
     height: 100px;
     width: 100%;
-    clear: both;
+    
 }
 
 /* versión tablet */
 @media (min-width: 600px) {
 	section {
 		width: 65%;
-		float: left;
+		display: inline-block;
+		
 	}
 	aside {
 		width: 32%;
-		float: right;
+		display: inline-block;
 		margin-left: 15px;
+		
 	}
 }
 	/* versión laptop */
