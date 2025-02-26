@@ -1,113 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog de Ruben</title>
-  <style>
-    /* Aqui va el código CSS */
-	  *{
-		  box-sizing: border-box;
-	  }
-	  body{
-		  padding: 0;
-		  margin: 0;
-		  color:#000000;
-	  }
-	  header{
-		  background: #A8A4FF;
-		  height:100px;
-		  padding: 30px;
-		  }
-	  nav{
-		  background: #A8A4FF;
-		  height: 75px;
-		  padding: 5px;
-	  }
-	  a{
-		 color: #000000; 
-	  }
-	  main{
-		  background:#A8A4FF;
-		  padding: 30px;
-		  position: relative;
-	  }
-	  section {
-		  width: 70%;
-	  }
-	  aside{
-		  position:absolute;
-		  width: 30%;
-		  right: 0;
-		  top: 30px;
-		  background:#CF9CFA;
-		  padding: 30px;
-	  }
-	  article{
-		  background: #C0A3D1;
-		  padding: 30px;
-		  margin-bottom: 15px; 
-	  }
-	  footer{
-		  background: #EAA5F8;
-		  padding: 30px;
-		  height: 100px;
-		  position: fixed;
-		  bottom: 0;
-		  width: 100%;
-	  }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog de Ruben</title>
+<style>
+/* Aqui va el código CSS */
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    color: #000000;
+}
+header {
+    background: #A8A4FF;
+    height: 100px;
+    padding: 30px;
+}
+nav {
+    background: #A8A4FF;
+    height: 75px;
+    padding: 5px;
+}
+a {
+    color: #000000;
+}
+main {
+    background: #A8A4FF;
+    padding: 30px;
+	overflow: auto;
+	zoom: 1;
+}
+aside {
+    background: #CF9CFA;
+    padding: 30px;
+}
+article {
+    background: #C0A3D1;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+footer {
+    background: #EAA5F8;
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+    clear: both;
+}
+
+/* versión tablet */
+@media (min-width: 600px) {
+	section {
+		width: 65%;
+		float: left;
+	}
+	aside {
+		width: 32%;
+		float: right;
+		margin-left: 15px;
+	}
+}
+	/* versión laptop */
+	@media (min-width: 1024px) {
+		section {
+			 width: 70%;
+		}
+   
+aside {
+width: 28%;
+
+}
+
+}
+</style>
 </head>
 <body>
 
-  <!-- Encabezado con el título del blog -->
-  <header>
-    <h1>Blog de Ruben</h1>
-  </header>
+<!-- Encabezado con el título del blog -->
+<header>
+  <h1>Blog de Ruben</h1>
+</header>
 
-  <!-- Menú de navegación principal -->
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Acerca de</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <main>
+<!-- Menú de navegación principal -->
+<nav>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+<main> 
   <!-- Sección para un artículo o post destacado -->
   <section>
     <article>
       <h2>Post Destacado</h2>
-      <p>
-        Aquí podrías mostrar un artículo especial o destacado, 
-        con una imagen grande o un resumen de lo más reciente.
-      </p>
+      <p> Aquí podrías mostrar un artículo especial o destacado, 
+        con una imagen grande o un resumen de lo más reciente. </p>
     </article>
-
     <article>
-        <h2>Título del Artículo 1</h2>
-        <p>
-          Este es un ejemplo de contenido para tu primer artículo. 
-          Puedes añadir más párrafos, imágenes, etc.
-        </p>
-      </article>
-  
-      <article>
-        <h2>Título del Artículo 2</h2>
-        <p>
-          Aquí otro artículo. La idea es que cada <code>&lt;article&gt;</code> 
-          represente una entrada de blog.
-        </p>
-      </article>
+      <h2>Título del Artículo 1</h2>
+      <p> Este es un ejemplo de contenido para tu primer artículo. 
+        Puedes añadir más párrafos, imágenes, etc. </p>
+    </article>
+    <article>
+      <h2>Título del Artículo 2</h2>
+      <p> Aquí otro artículo. La idea es que cada <code>&lt;article&gt;</code> represente una entrada de blog. </p>
+    </article>
   </section>
-
+  
   <!-- Barra lateral (sidebar) para widgets, enlaces, etc. -->
   <aside>
     <h3>Acerca de mí</h3>
-    <p>
-      Un breve texto sobre ti o el blog, tus redes sociales, o algo que quieras destacar.
-    </p>
+    <p> Un breve texto sobre ti o el blog, tus redes sociales, o algo que quieras destacar. </p>
     <h3>Categorías</h3>
     <ul>
       <li><a href="#">Tecnología</a></li>
@@ -117,10 +123,9 @@
   </aside>
 </main>
 
-  <!-- Pie de página -->
-  <footer>
-    <p>&copy; 2025 Blog de remplaza este texto con tu nombre - Todos los derechos reservados.</p>
-  </footer>
-
+<!-- Pie de página -->
+<footer>
+  <p>&copy; 2025 Blog de remplaza este texto con tu nombre - Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
